@@ -1,0 +1,649 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+.region-content,
+.region-content-top,
+.cke_show_borders,
+.cke_contents {
+  /* @group Table Data */
+  /* @end */
+}
+.region-content table,
+.region-content-top table,
+.cke_show_borders table,
+.cke_contents table {
+  -moz-box-shadow: 0 0 10px #fafafa;
+  -webkit-box-shadow: 0 0 10px #fafafa;
+  box-shadow: 0 0 10px #fafafa;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 4px solid #ddd;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.region-content table, .region-content table p,
+.region-content-top table,
+.region-content-top table p,
+.cke_show_borders table,
+.cke_show_borders table p,
+.cke_contents table,
+.cke_contents table p {
+  font-size: 13px;
+}
+.region-content table ul li,
+.region-content-top table ul li,
+.cke_show_borders table ul li,
+.cke_contents table ul li {
+  margin-left: 15px;
+}
+.region-content table td,
+.region-content-top table td,
+.cke_show_borders table td,
+.cke_contents table td {
+  -moz-box-shadow: inset 2px 2px 20px #fafafa;
+  -webkit-box-shadow: inset 2px 2px 20px #fafafa;
+  box-shadow: inset 2px 2px 20px #fafafa;
+  background-image: url(/sites/all/themes/jjamerson/images/textures/medium-noise4.png);
+  background-transparency: 50%;
+  background-repeat: repeat;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #4a4a4a;
+  margin: 2px;
+  padding: 15px;
+  vertical-align: inherit;
+}
+.region-content table td.vertical-align-middle,
+.region-content-top table td.vertical-align-middle,
+.cke_show_borders table td.vertical-align-middle,
+.cke_contents table td.vertical-align-middle {
+  vertical-align: middle;
+}
+.region-content table td.align-center,
+.region-content-top table td.align-center,
+.cke_show_borders table td.align-center,
+.cke_contents table td.align-center {
+  text-align: center;
+}
+.region-content table th,
+.region-content-top table th,
+.cke_show_borders table th,
+.cke_contents table th {
+  border: 1px solid #eee;
+}
+.region-content table thead, .region-content table th,
+.region-content-top table thead,
+.region-content-top table th,
+.cke_show_borders table thead,
+.cke_show_borders table th,
+.cke_contents table thead,
+.cke_contents table th {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+  padding-left: 15px;
+}
+.region-content table.no-borders, .region-content .gsc-control-cse table,
+.region-content-top table.no-borders,
+.region-content-top .gsc-control-cse table,
+.cke_show_borders table.no-borders,
+.cke_show_borders .gsc-control-cse table,
+.cke_contents table.no-borders,
+.cke_contents .gsc-control-cse table {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  border-spacing: collapse;
+  border-spacing: 0;
+  border: none;
+}
+.region-content table.no-borders td, .region-content .gsc-control-cse table td,
+.region-content-top table.no-borders td,
+.region-content-top .gsc-control-cse table td,
+.cke_show_borders table.no-borders td,
+.cke_show_borders .gsc-control-cse table td,
+.cke_contents table.no-borders td,
+.cke_contents .gsc-control-cse table td {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  border: none;
+  vertical-align: top;
+}
+.region-content table.text-align-center td,
+.region-content-top table.text-align-center td,
+.cke_show_borders table.text-align-center td,
+.cke_contents table.text-align-center td {
+  text-align: center;
+}
+.region-content table.vertical-align-middle td,
+.region-content-top table.vertical-align-middle td,
+.cke_show_borders table.vertical-align-middle td,
+.cke_contents table.vertical-align-middle td {
+  vertical-align: middle;
+}
+.region-content table.fixed,
+.region-content-top table.fixed,
+.cke_show_borders table.fixed,
+.cke_contents table.fixed {
+  width: 100%;
+  table-layout: fixed;
+}
+.region-content table.compact thead, .region-content table.compact th,
+.region-content-top table.compact thead,
+.region-content-top table.compact th,
+.cke_show_borders table.compact thead,
+.cke_show_borders table.compact th,
+.cke_contents table.compact thead,
+.cke_contents table.compact th {
+  padding: 10px;
+}
+.region-content table.compact td,
+.region-content-top table.compact td,
+.cke_show_borders table.compact td,
+.cke_contents table.compact td {
+  padding: 4px 10px;
+}
+.region-content .gsc-control-cse table,
+.region-content-top .gsc-control-cse table,
+.cke_show_borders .gsc-control-cse table,
+.cke_contents .gsc-control-cse table {
+  margin: 0px;
+}
+.region-content .gsc-control-cse table thead, .region-content .gsc-control-cse table th,
+.region-content-top .gsc-control-cse table thead,
+.region-content-top .gsc-control-cse table th,
+.cke_show_borders .gsc-control-cse table thead,
+.cke_show_borders .gsc-control-cse table th,
+.cke_contents .gsc-control-cse table thead,
+.cke_contents .gsc-control-cse table th {
+  padding: 0px;
+}
+.region-content .gsc-control-cse table td,
+.region-content-top .gsc-control-cse table td,
+.cke_show_borders .gsc-control-cse table td,
+.cke_contents .gsc-control-cse table td {
+  padding: 2px 8px 2px 0px;
+}
+.region-content table.striped tr:nth-child(odd) td,
+.region-content-top table.striped tr:nth-child(odd) td,
+.cke_show_borders table.striped tr:nth-child(odd) td,
+.cke_contents table.striped tr:nth-child(odd) td {
+  background-color: #e7e7e7;
+}
+.region-content table.data,
+.region-content-top table.data,
+.cke_show_borders table.data,
+.cke_contents table.data {
+  border-collapse: collapse;
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.region-content table.data th, .region-content table.data td,
+.region-content-top table.data th,
+.region-content-top table.data td,
+.cke_show_borders table.data th,
+.cke_show_borders table.data td,
+.cke_contents table.data th,
+.cke_contents table.data td {
+  margin: 0;
+  padding: 4px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background-color: transparent;
+}
+.region-content table.data th,
+.region-content-top table.data th,
+.cke_show_borders table.data th,
+.cke_contents table.data th {
+  background-image: url(/sites/all/themes/jjamerson/images/textures/medium-noise4.png);
+  background-transparency: 50%;
+  background-repeat: repeat;
+  background-color: #ddd;
+  color: #333;
+}
+.region-content table.data tr,
+.region-content-top table.data tr,
+.cke_show_borders table.data tr,
+.cke_contents table.data tr {
+  background: #fff;
+}
+.region-content table.data tr.altRow,
+.region-content-top table.data tr.altRow,
+.cke_show_borders table.data tr.altRow,
+.cke_contents table.data tr.altRow {
+  background: #f1f1f1;
+}
+.region-content table.data td.bold,
+.region-content-top table.data td.bold,
+.cke_show_borders table.data td.bold,
+.cke_contents table.data td.bold {
+  font-weight: bold;
+}
+.region-content table.scroll-oversized,
+.region-content-top table.scroll-oversized,
+.cke_show_borders table.scroll-oversized,
+.cke_contents table.scroll-oversized {
+  overflow: auto;
+  display: block;
+}
+.region-content .red,
+.region-content-top .red,
+.cke_show_borders .red,
+.cke_contents .red {
+  color: red;
+}
+.region-content table.small-font,
+.region-content-top table.small-font,
+.cke_show_borders table.small-font,
+.cke_contents table.small-font {
+  font-size: 13px;
+  line-height: 16px;
+}
+.region-content table.striped tr:nth-child(odd), .region-content table.stripes tr:nth-child(odd), .region-content table.stripe tr:nth-child(odd),
+.region-content-top table.striped tr:nth-child(odd),
+.region-content-top table.stripes tr:nth-child(odd),
+.region-content-top table.stripe tr:nth-child(odd),
+.cke_show_borders table.striped tr:nth-child(odd),
+.cke_show_borders table.stripes tr:nth-child(odd),
+.cke_show_borders table.stripe tr:nth-child(odd),
+.cke_contents table.striped tr:nth-child(odd),
+.cke_contents table.stripes tr:nth-child(odd),
+.cke_contents table.stripe tr:nth-child(odd) {
+  background: #f8f8f8;
+}
+.region-content table.thin-borders,
+.region-content-top table.thin-borders,
+.cke_show_borders table.thin-borders,
+.cke_contents table.thin-borders {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-spacing: 1px;
+}
+.region-content table.thin-borders td,
+.region-content-top table.thin-borders td,
+.cke_show_borders table.thin-borders td,
+.cke_contents table.thin-borders td {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.region-content table.oversized th, .region-content table.oversized thead,
+.region-content-top table.oversized th,
+.region-content-top table.oversized thead,
+.cke_show_borders table.oversized th,
+.cke_show_borders table.oversized thead,
+.cke_contents table.oversized th,
+.cke_contents table.oversized thead {
+  display: none;
+}
+.region-content table.oversized th, .region-content table.oversized thead, .region-content table.oversized tr, .region-content table.oversized td,
+.region-content-top table.oversized th,
+.region-content-top table.oversized thead,
+.region-content-top table.oversized tr,
+.region-content-top table.oversized td,
+.cke_show_borders table.oversized th,
+.cke_show_borders table.oversized thead,
+.cke_show_borders table.oversized tr,
+.cke_show_borders table.oversized td,
+.cke_contents table.oversized th,
+.cke_contents table.oversized thead,
+.cke_contents table.oversized tr,
+.cke_contents table.oversized td {
+  height: auto;
+}
+.region-content table.oversized tr,
+.region-content-top table.oversized tr,
+.cke_show_borders table.oversized tr,
+.cke_contents table.oversized tr {
+  display: block;
+  border-bottom: 7px solid #ddd;
+}
+.region-content table.oversized td,
+.region-content-top table.oversized td,
+.cke_show_borders table.oversized td,
+.cke_contents table.oversized td {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  display: block;
+  margin: 0 !important;
+  overflow: hidden;
+  width: 100%;
+}
+.region-content table.oversized .table-header-text,
+.region-content-top table.oversized .table-header-text,
+.cke_show_borders table.oversized .table-header-text,
+.cke_contents table.oversized .table-header-text {
+  display: block;
+  float: left;
+  font-weight: bold;
+}
+.region-content table.oversized .original-content,
+.region-content-top table.oversized .original-content,
+.cke_show_borders table.oversized .original-content,
+.cke_contents table.oversized .original-content {
+  display: block;
+  float: left;
+  margin-left: 0.5em;
+}
+
+/* Award tables MPE: Sortable, paginated table */
+.dataTables_wrapper {
+  padding-top: 15px;
+}
+.dataTables_wrapper select {
+  width: 80px;
+}
+
+#DataTables_Table_0 td,
+#DataTables_Table_0 th,
+#DataTables_Table_0 th.sorting_asc,
+#DataTables_Table_0 th.sorting_dsc {
+  padding: 5px 7px;
+}
+
+#DataTables_Table_0 th {
+  cursor: pointer;
+}
+
+#DataTables_Table_0 tr.even {
+  background-color: #eee;
+}
+
+#DataTables_Table_0 tr.even td {
+  background: none;
+}
+
+#DataTables_Table_0 th {
+  font-size: 10px;
+  position: relative;
+}
+
+#DataTables_Table_0 th.sorting:after {
+  color: #3b5998;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f0dc";
+  opacity: 0.65;
+  position: absolute;
+  right: 3px;
+}
+
+#DataTables_Table_0 th.sorting_asc:after {
+  color: #3b5998;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f0de";
+  opacity: 0.65;
+  position: absolute;
+  right: 3px;
+}
+
+#DataTables_Table_0 th.sorting_desc:after {
+  color: #3b5998;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f0dd";
+  opacity: 0.65;
+  position: absolute;
+  right: 3px;
+}
+
+.dataTables_paginate,
+.dataTables_filter {
+  float: right;
+}
+.dataTables_paginate a.paginate_button,
+.dataTables_filter a.paginate_button {
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+.dataTables_info,
+.dataTables_length {
+  float: left;
+}
+
+/* Interactive Grid styles: It's sort of fake tables stuff so it seemed to make sense on this file */
+.region-content .grid ul.grid-key {
+  margin: 0;
+  padding: 0;
+}
+.region-content .grid ul.grid-key li {
+  color: #666;
+  display: inline;
+  margin: 0;
+  padding-right: 14px;
+  white-space: nowrap;
+}
+.region-content .grid ul.grid-key li div {
+  display: inline-block;
+  height: 15px;
+  width: 60px;
+  margin: 4px 4px -1px 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .region-content .grid ul.grid-key li div {
+    width: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .region-content .grid ul.grid-key li div {
+    width: 120px;
+  }
+}
+.region-content .grid ul.grid-key li p {
+  display: inline;
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+}
+.region-content .grid .major {
+  background: #F3901E url("http://www.berklee.edu/sites/default/files/icons/background-ig-02.png") no-repeat 100% 100%;
+}
+.region-content .grid .liberal {
+  background: #B0BC22 url("http://www.berklee.edu/sites/default/files/icons/background-ig-01.png") no-repeat 100% 100%;
+}
+.region-content .grid .core {
+  background: #00AEEF url("http://www.berklee.edu/sites/default/files/icons/background-ig-04.png") no-repeat 100% 100%;
+}
+.region-content .grid .elective {
+  background: #BC61D3 url("http://www.berklee.edu/sites/default/files/icons/background-ig-03.png") no-repeat 100% 100%;
+}
+.region-content .grid section {
+  float: left;
+  width: 115px;
+  /*background-color: #efece4;*/
+  display: inline;
+  vertical-align: top;
+  margin: 0 5px 15px 0;
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .region-content .grid section {
+    font-size: 120%;
+    width: 250px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .region-content .grid section {
+    font-size: 130%;
+    width: 185px;
+  }
+}
+@media (max-width: 767px) {
+  .region-content .grid section {
+    font-size: 140%;
+    width: 98%;
+  }
+}
+.region-content .grid section section:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.region-content .grid section header {
+  background-color: #666;
+  color: #FFFFFF;
+  font-size: .8em;
+  margin-top: 0;
+  padding: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+.region-content .grid section h3 {
+  color: #666;
+  font-size: 85%;
+  margin: 10px 0 0 3px;
+}
+@media (min-width: 1200px) {
+  .region-content .grid section h3 {
+    display: none;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .region-content .grid section h3 {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .region-content .grid section h3 {
+    display: none;
+  }
+}
+.region-content .grid section ul {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.region-content .grid section ul li {
+  list-style-type: none;
+  margin: 0;
+}
+.region-content .grid section ul li:nth-child(1) {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  font-size: .7em;
+  margin-top: 0;
+  padding: 3px 5px;
+}
+.region-content .grid section ul li:nth-child(1) a {
+  color: #ffffff;
+}
+.region-content .grid section ul li:nth-child(1) a:hover {
+  color: #ffffff;
+  padding-bottom: 2px;
+}
+.region-content .grid section ul li:nth-child(2) {
+  background-color: #968e85;
+  background-image: url("/sites/all/themes/jjamerson/images/textures/medium-noise4.png");
+  background-transparency: 50%;
+  color: #ffffff;
+  font-size: .8em;
+  line-height: 1.3em;
+  min-height: 47px;
+  padding: 3px;
+}
+.region-content .grid section ul li:nth-child(3) {
+  background-color: #968e85;
+  background-image: url("/sites/all/themes/jjamerson/images/textures/medium-noise4.png");
+  background-transparency: 50%;
+  color: #ffffff;
+  letter-spacing: .5px;
+  font-size: 50%;
+  padding: 10px 0 2px 3px;
+  text-transform: uppercase;
+}
+.region-content .grid section ul li:nth-child(4) {
+  background-color: #bbb1a7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-size: .6em;
+  margin-top: 0;
+  padding: 3px 5px;
+}
+
+/*! Add rounded corners to your tooltips in: FF3+, Chrome 2+, Opera 10.6+, IE9+, Safari 2+ */
+.page-node .ui-tooltip-content {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.page-node .ui-tooltip-content a {
+  color: #fff;
+}
+
+.page-node .ui-tooltip-titlebar {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.page-node .ui-tooltip-titlebar + .ui-tooltip-content {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.page-node .ui-tooltip-default .ui-tooltip-content {
+  _margin-bottom: 0;
+  /* IE6 */
+  .margin-bottom: 0;
+  /* IE7 */
+  background: transparent;
+  background: rgba(0, 0, 0, 0.87);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000,endColorstr=#D9000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000,endColorstr=#D9000000)";
+  color: white;
+  border: 0px transparent;
+  font-size: 11px;
+  font-family: 'Lucida Grande', sans-serif;
+  font-weight: bold;
+  line-height: 16px;
+  text-shadow: 0 1px black;
+}
+.page-node .ui-tooltip-default .ui-tooltip-content p {
+  font-size: 11px;
+}
+
+table.cke_editor {
+  table-layout: fixed;
+}
+table.cke_editor .cke_toolbar {
+  max-width: 100%;
+}
+table.cke_editor .cke_toolbar .cke_button {
+  display: block;
+  float: left;
+}
+
+.gsc-control-cse {
+  padding: 0px !important;
+}
+.gsc-control-cse .gsc-table-result {
+  width: 550px !important;
+}
+.gsc-control-cse .gsc-result-info {
+  padding-left: 0px !important;
+}
+.gsc-control-cse .gsc-orderby {
+  visibility: hidden;
+}

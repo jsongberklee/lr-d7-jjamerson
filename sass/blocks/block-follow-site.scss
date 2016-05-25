@@ -1,0 +1,125 @@
+@import "../jjamerson_variables";
+
+#block-follow-site {
+  a.follow-link {
+    background: url(#{$images}/footer/social.png) no-repeat;
+    color: transparent; 
+    font-size: 0;
+    height: 34px;
+    line-height: 0; 
+    margin-right: 10px;
+    opacity: 0.8;
+    padding-left: 0;
+    width: 34px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  a.follow-link:last-child{
+    margin-right: 0;
+  }
+  a.follow-link-facebook {
+    background-position: 0 -34px;
+  }
+  a.follow-link-twitter {
+    background-position: 0 0px;
+  }
+  a.follow-link-youtube {
+    background-position: 0 -68px;
+  }
+}
+
+#block-menu-menu-follow-berklee-links { 
+  width: 40%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  background: none;
+  > h3 { display: none } // the subject is there only to give the menu an aria-role
+  @media #{$s} {
+    background: none;
+    clear: both;
+    float: none;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+    //@include transform( scale(0.5) );
+    a {
+      width: 25%;
+      height: auto;
+      text-align: center;
+      position: relative;
+      color: transparent;
+      /*font-weight: bold;*/
+      line-height: 0;
+      display: block;
+      z-index: 1;
+      font-size: 1em;
+      opacity: 0.8;
+      &:hover {
+        text-decoration: none;
+        opacity: 1;
+      }
+      &:before {
+        width: 100%;
+        background: transparent;
+        height: auto;
+        display: block;
+        content: '';
+        height: 61px;
+        position: relative;
+        top: 0;
+        z-index: -1;
+        font-size: 47px;
+        line-height: normal;
+        padding-top: 7px;
+        @include box-sizing(border-box);
+        @include box-shadow(inset 0 0 40px rgba(0,0,0, 0.3) );
+      }
+
+      &[href*="berklee-blogs"]:before {
+        font-weight: bold;
+        color: white;
+        background: $berklee-red;
+        content: 'B';
+        line-height: 102%;
+      }
+      &[href*="twitter"]:before {
+        @include icon('icon-twitter', '#fff');
+        background: #32CDFD;
+      }
+      &[href*="facebook"]:before {
+        @include icon('icon-facebook', '#fff');
+        background: #3B5998;
+      }
+      &[href*="youtube"]:before {
+        @include icon('icon-youtube', '#fff');
+        background: #E52C27;
+      }
+      &[href*="instagram"]:before {
+        @include icon('icon-instagram', '#fff');
+        background: #D4C7B7;
+       
+      }
+      &[href*="tumblr"]:before {
+        @include icon('icon-tumblr', '#fff');
+        background: #2C4762;
+       
+      }
+      &[href*="flickr"]:before {
+        @include icon('icon-flickr', '#fff');
+        background: #FF0084;
+       
+      }
+      &[href*="pinterest"]:before {
+        @include icon('icon-pinterest', '#fff');
+        background: #CC2127;
+      }
+    }
+  }
+}

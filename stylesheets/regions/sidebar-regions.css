@@ -1,0 +1,252 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+/* Both Sidebar Regions: */
+.region-sidebar-first, .region-sidebar-second {
+  position: relative;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+.region-sidebar-first a.active, .region-sidebar-second a.active {
+  pointer-events: none;
+}
+.region-sidebar-first a.active:hover, .region-sidebar-second a.active:hover {
+  cursor: default;
+  text-decoration: none;
+}
+.region-sidebar-first > .container, .region-sidebar-second > .container {
+  display: inline;
+}
+.region-sidebar-first h3, .region-sidebar-second h3 {
+  word-break: break-word;
+  color: #333;
+  font-weight: normal;
+  margin-top: 5px;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+.region-sidebar-first h3 a:not(.active), .region-sidebar-second h3 a:not(.active) {
+  color: #333;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .region-sidebar-first h3, .region-sidebar-second h3 {
+    font-size: 14px;
+  }
+}
+.region-sidebar-first hr, .region-sidebar-second hr {
+  margin: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+}
+.region-sidebar-first .content > nav > ul.menu > li:not(:last-child),
+.region-sidebar-first .content > .menu-block-wrapper > nav > ul.menu > li:not(:last-child), .region-sidebar-second .content > nav > ul.menu > li:not(:last-child),
+.region-sidebar-second .content > .menu-block-wrapper > nav > ul.menu > li:not(:last-child) {
+  border-bottom: 1px dotted #ddd;
+}
+.region-sidebar-first .content > nav > ul.menu:not(:first-child), .region-sidebar-second .content > nav > ul.menu:not(:first-child) {
+  border-top: 1px dotted #ddd;
+}
+.region-sidebar-first .content > nav > ul.menu > li, .region-sidebar-second .content > nav > ul.menu > li {
+  padding-left: 0;
+}
+.region-sidebar-first ul.menu li, .region-sidebar-second ul.menu li {
+  font-weight: normal;
+  padding-bottom: 3px;
+  padding-left: 12px;
+  padding-top: 3px;
+}
+.region-sidebar-first ul.menu li a, .region-sidebar-second ul.menu li a {
+  display: block;
+  margin-left: -5px;
+  padding: 5px;
+  padding-right: 13%;
+  width: 90%;
+}
+.region-sidebar-first ul.menu li a:hover, .region-sidebar-second ul.menu li a:hover {
+  color: #d81118;
+}
+.region-sidebar-first ul.menu li a.active, .region-sidebar-second ul.menu li a.active {
+  color: #d81118;
+  text-shadow: 1px 1px 1px #fff;
+  opacity: 0.8;
+  font-weight: bold;
+}
+.region-sidebar-first ul.menu li span, .region-sidebar-second ul.menu li span {
+  color: #888;
+  display: block;
+  margin-bottom: 7px;
+}
+.region-sidebar-first img.full-width, .region-sidebar-first img[displaystyle="full-width"], .region-sidebar-second img.full-width, .region-sidebar-second img[displaystyle="full-width"] {
+  width: 98%;
+}
+
+/* Left sidebar */
+.region-sidebar-first {
+  /* Experimental style, disabled because it's odd: 
+  .breadcrumb {
+    @include clearfix();
+    background: none;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    li {
+      position: relative;
+      display: block;
+      float: left;
+      margin-top: 1px;
+      padding-left: 13px;
+      a {
+        color: #888;
+        font-size: 13px;
+      }
+    }
+    li:not(:first-child):before {
+      @include icon('icon-chevron-left', #ddd);
+      @include rotate(-45deg);
+      display: block;
+      float: left;
+      margin: 0 5px;
+    }
+    li:first-child {
+      padding-left: 0;
+    }
+    li:only-child {
+      &:after {
+        display: none;
+      }
+      &:before {
+        @include icon('icon-chevron-left', #ddd);
+        @include rotate(0);
+        font-size: 10px;
+        line-height: 15px;
+        margin-right: 5px;
+      }
+    }
+    li:last-child:after {
+      @include icon('icon-level-down', #ddd);
+      right: -12px;
+      position: absolute;
+      top: 5px;
+    }
+  }
+  */
+}
+@media (min-width: 768px) {
+  .region-sidebar-first {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 19%;
+    margin-left: 5%;
+  }
+}
+.region-sidebar-first #block-berklee-site-section-menu {
+  border-top: 2px solid #d32;
+}
+.region-sidebar-first #block-berklee-site-section-menu > h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.region-sidebar-first .content a {
+  color: #333;
+}
+@media (max-width: 767px) {
+  .region-sidebar-first .content ul.menu li {
+    margin-left: 5px;
+    width: 94%;
+  }
+}
+.region-sidebar-first .content ul.menu a {
+  line-height: 1.4em;
+}
+.region-sidebar-first .content ul.menu a:hover, .region-sidebar-first .content ul.menu a.active {
+  /* The icon: */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-bottom-color: #d7dade;
+  border-color: #cfd2d6;
+  border-top-color: #c0c2c5;
+  position: relative;
+  text-decoration: none;
+}
+.region-sidebar-first .content ul.menu a:hover:after, .region-sidebar-first .content ul.menu a.active:after {
+  color: #aaa;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f061";
+  line-height: 0;
+  position: absolute;
+  right: 6px;
+  text-shadow: -1px -1px 0 #fff;
+  top: 50%;
+}
+.region-sidebar-first .breadcrumb {
+  overflow: hidden;
+  *zoom: 1;
+}
+@media (max-width: 767px) {
+  .region-sidebar-first .breadcrumb {
+    display: none;
+  }
+}
+.region-sidebar-first .breadcrumb a {
+  color: #bbb;
+  font-style: italic;
+  font-size: 12px;
+}
+.region-sidebar-first .breadcrumb a:hover {
+  color: #d81118;
+}
+.region-sidebar-first .breadcrumb li {
+  display: inline;
+  margin: 0;
+}
+.region-sidebar-first .breadcrumb li:not(:last-child):after {
+  margin: 0 5px;
+  color: #888;
+  content: ' / ';
+}
+
+/* Left sidebar */
+@media (min-width: 768px) {
+  .region-sidebar-second {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 23%;
+    margin-left: 0%;
+    margin-right: 5%;
+  }
+}
+.region-sidebar-second .block {
+  margin: 0 0 20px;
+  padding: 9px 14px 11px;
+  background: #ecebeb;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .region-sidebar-second .block {
+    width: 100%;
+  }
+}
+.region-sidebar-second .block > h3 {
+  /*
+  &:after {
+    @include dottedBorder;
+  }
+  */
+  font-weight: 100;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d32;
+}
+.region-sidebar-second .block .content h3 {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.page-node-order .region-sidebar-second {
+  display: none;
+}

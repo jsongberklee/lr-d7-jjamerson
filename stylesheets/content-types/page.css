@@ -1,0 +1,33 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+body.page-node:not(.front) {
+  background: #f6f4f5;
+}
+body.page-node:not(.front) #page-content, body.page-node:not(.front) .region-sidebar-first, body.page-node:not(.front) .region-sidebar-second .block {
+  padding: 15px;
+  background: white;
+  -moz-box-shadow: 1px 1px 7px rgba(40, 38, 37, 0.13);
+  -webkit-box-shadow: 1px 1px 7px rgba(40, 38, 37, 0.13);
+  box-shadow: 1px 1px 7px rgba(40, 38, 37, 0.13);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+@media (max-width: 767px) {
+  body.page-node:not(.front) .region-sidebar-first {
+    margin: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+body.page-node:not(.front) .region-sidebar-second .block {
+  background: #fcfbfa;
+}
+body.page-node:not(.front) #page-content {
+  padding-top: 7px;
+  margin-bottom: 30px;
+}
+body.page-node:not(.front) .region-sidebar-first, body.page-node:not(.front) .region-sidebar-second {
+  margin-top: 0;
+}

@@ -1,0 +1,31 @@
+@import "compass";
+@import "custom-mixins";
+
+$huge: '(min-width: 1600px)';
+$xl: '(min-width: 1200px)';
+$l:  '(min-width: 980px) and (max-width: 1199px)';
+$m:  '(min-width: 768px) and (max-width: 979px)';
+$s:  '(max-width: 767px)';
+$not-small: '(min-width: 768px)';
+$not-large: '(max-width: 979px)';
+$not-xlarge: '(max-width: 1199px)';
+$huge-width: 1600px;
+$xl-width: 1200px;
+$l-width:  980px;
+$m-width:  768px;
+$s-width:  480px;
+
+$headline: "open sans",​ Arial,​ Helvetica,​ sans-serif;
+
+$body: "open sans",​ Arial,​ Helvetica,​ sans-serif;
+
+$icon-font: fontAwesome;
+
+// Assets:
+$images: "/sites/all/themes/jjamerson/images";
+
+// Colors:
+//$berklee-red: #ed1c24;
+$berklee-red: #d81118; // darkened for accessibility purposes
+$light-gray: #eee;
+$berklee-gray: $light-gray; // alias

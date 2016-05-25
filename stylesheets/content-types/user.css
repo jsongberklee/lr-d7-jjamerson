@@ -1,0 +1,43 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+body.page-user .region-content > .container > .block {
+  margin-bottom: 15px;
+}
+body.page-user .form-item.form-type-password {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+}
+body.page-user input.form-text {
+  width: 30%;
+}
+body.page-user .password-strength, body.page-user .password-confirm:first-child {
+  color: #666;
+  float: right;
+  font-style: italic;
+  margin-top: 22px;
+  position: relative;
+  width: 67%;
+}
+body.page-user .password-strength-text {
+  color: black;
+  font-weight: bold;
+  left: 129px;
+  position: absolute;
+}
+body.page-user .password-confirm:first-child > span {
+  font-weight: bold;
+}
+body.page-user .password-confirm:first-child > span.ok {
+  color: green;
+}
+body.page-user .password-confirm:first-child > span.error {
+  color: red;
+}
+body.page-user .password-suggestions.description {
+  font-size: 13px;
+}
+body.page-user .password-suggestions.description li {
+  margin: 6px 0;
+  line-height: 17px;
+}

@@ -1,0 +1,189 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+#off-screen {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+#off-screen.hidden {
+  background: transparent;
+  opacity: 0;
+}
+#off-screen.visible {
+  background: rgba(0, 0, 0, 0.66);
+  opacity: 1;
+  z-index: 970;
+}
+
+.region-header.open #logo {
+  left: 31%;
+}
+
+#block-block-376 .contextual-links-wrapper {
+  right: -50px;
+}
+
+#off-screen-sidebar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  background: #2a2a2a;
+  border-top: 3px solid #555;
+  border-right: 3px solid black;
+  box-shadow: inset 0 0 20px #1a1a1a;
+  float: left;
+  height: 100%;
+  overflow: auto;
+  padding-top: 1em;
+  position: fixed;
+  z-index: 5;
+  opacity: 1;
+  max-width: 0%;
+  top: 0;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+#off-screen-sidebar.closed {
+  -webkit-animation: fadout 0.4s;
+}
+#off-screen-sidebar.open {
+  max-width: 30%;
+  opacity: 1;
+  -webkit-animation: fadein 0.4s;
+}
+#off-screen-sidebar #block-system-main-menu h3 {
+  display: none;
+}
+#off-screen-sidebar .dashboard-link:before {
+  color: #eee;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f0e4";
+  margin-right: 7px;
+  font-size: 1.2em;
+  display: inline-block;
+}
+#off-screen-sidebar h3 {
+  margin-left: 5%;
+  color: rgba(255, 242, 240, 0.9);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+#off-screen-sidebar li {
+  display: block;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #222;
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#off-screen-sidebar li a {
+  color: rgba(255, 242, 240, 0.75) !important;
+  display: block;
+  padding: 0.5em 1em;
+  border-left: 3px solid transparent;
+  letter-spacing: 0.4px;
+}
+#off-screen-sidebar li a:hover {
+  color: white !important;
+  background: #222;
+  text-decoration: none;
+  border-left: 3px solid #d81118;
+}
+#off-screen-sidebar li a:hover:before {
+  color: white !important;
+}
+#off-screen-sidebar li ul {
+  display: none;
+}
+
+body.admin-menu #off-screen-sidebar {
+  padding-top: 72px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+#off-screen-sidebar, #page {
+  width: 100%;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#page.open {
+  max-width: 100%;
+}
+
+#page.closed {
+  max-width: 70%;
+}
+
+#page {
+  float: right;
+}
+
+/* Just in case we need to add items to the dashboard that aren't in a menu: */
+.offscreen-sidebar-item {
+  color: rgba(255, 242, 240, 0.75);
+  padding: 0.7em 1em;
+  display: block;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #222;
+  background: transparent;
+  border-left: 3px solid transparent;
+  letter-spacing: 0.4px;
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.offscreen-sidebar-item:hover {
+  border-left: 3px solid #d81118;
+  text-decoration: none;
+  background: #222;
+  color: white;
+}
+.offscreen-sidebar-item:hover:before {
+  color: white;
+}
+
+.region-off-screen-overlay {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  max-width: 79%;
+  float: right;
+}
+.region-off-screen-overlay nav {
+  display: none;
+}
+.region-off-screen-overlay .block-menu {
+  display: none;
+}

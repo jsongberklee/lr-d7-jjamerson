@@ -1,0 +1,5 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+.icon, .fa {
+  margin-right: 0.56em;
+}

@@ -1,0 +1,225 @@
+@import "../jjamerson_variables";
+
+.region-top-nav .block-menu.campus-tools {
+  position: relative;
+  @media #{$not-small} {
+    float: right;
+  }
+  h3 {
+    border-right: 1px solid #444;
+    color: transparent;
+    font-weight: normal;
+    height: 30px;
+    line-height: 1.5em;
+    margin-right: 0.5em;
+    overflow: hidden;
+    padding-left: 10px;
+    text-align: center;
+    width: 28px;
+    &:before {
+      content: "\f00a";
+      font-family: fontAwesome;
+      font-size: 16px;
+      color: white;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .contextual-links-wrapper {
+    left: -30px;
+    width: 30px;
+  }
+  .content {
+    position: absolute;
+    .tip {
+      @include transform( rotate(45deg) );
+      @include transition(opacity 0.2s ease); 
+      background: #f2f2f2;
+      border: 2px solid #dedede;
+      border-bottom-width: 0;
+      border-right-width: 0;
+      height: 15px;
+      left: 11px;
+      position: absolute;
+      top: -2px;
+      width: 15px;
+      &:not(.visible) {
+        @include visuallyhidden();
+        opacity: 0;
+      }
+    }
+    nav {
+      @include transition(opacity 0.4s ease);
+      @media #{$not-small} {
+        margin-top: 35px;
+        width: 314px;
+        max-height: 443px;
+        height: auto;
+        overflow: hidden;
+        background: #f2f2f2;
+        border: 2px solid #dedede;
+        border-radius: 2px;
+        left: -142px;
+        top: -30px;
+        opacity: 1;
+        position: absolute;
+      }
+      padding: 0.2em;
+      position: relative;
+      &:not(.visible) {
+        @include visuallyhidden();
+        opacity: 0;
+      }
+      // Just the apps:
+      ul li:nth-child(2) ul li {
+        @include transition(opacity 0.4s ease);
+        &:not(.visible) {
+          @include visuallyhidden();
+          opacity: 0;
+        }
+      } 
+      li.has-submenu {
+        .nolink {
+          display: block;
+          text-align: center;
+          border-bottom: 1px solid #ddd;
+          color: #999;
+          font-weight: 100;
+          font-size: 11px;
+          margin-bottom: 0.66em;
+        }
+        &.first > ul li {
+          height: 34px;
+          border-top: 2px solid #ccc;
+          &:hover {
+            border-top-color: $berklee-red;
+          }
+          a {
+            font-weight: 100;
+            height: auto;
+            position: relative;
+            @include transform(translateY(-50%));
+            font-size: 11px;
+            letter-spacing: 0.1px;
+            color: #222;
+            text-align: center;
+            top: 50%;
+            margin-left: -1px;
+          }
+        }
+        > ul {
+          clear: both;
+          display: block;
+          width: 100%;
+          li {
+            @include transition(all 0.4s ease);
+            display: block;
+            width: 93px;
+            float: left;
+            margin: 4px;
+            height: 93px;
+            background: white;
+            position: relative;
+            z-index: 5;
+            box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              padding: 2%;
+              font-size: 12px;
+              color: #888;
+              font-weight: 100;
+              line-height: normal;
+              text-align: center;
+              position: relative;
+              i {
+                @include transition(all 0.4s ease);
+                position: absolute;
+                font-size: 35px;
+                font-style: normal;
+                text-align: center;
+                width: 100%;
+                left: 0;
+                top: 0.5em;
+                &.icon-lynda, &.icon-lynda:after {
+                  background-image: url('#{$images}/icons/lynda-100x100-gray.png');
+                  background-repeat: no-repeat;
+                  background-size: 40px;
+                  display: block;
+                  height: 40px;
+                  margin: -5px auto;
+                  opacity: 0.85;
+                  padding: 0 1px;
+                  position: relative;
+                  width: 40px;
+                }
+                &.icon-lynda:after {
+                  @include transition(all 0.4s ease);
+                  background-image: url('#{$images}/icons/lynda-100x100-red.png');
+                  opacity: 0;
+                  content: '';
+                  position: absolute;
+                  top: 5px;
+                  left: 0;
+                }
+              }
+              .image-icon {
+                max-width: 38px;
+                max-height: 35px;
+                height: auto;
+                margin: 1.25em auto;
+              }
+              &:hover .icon-lynda {
+                // Causes cool rainbow: @include filter( sepia(50%) saturate(1000%) hue-rotate(320deg) brightness(32%) saturate(300%) );
+                &:after {
+                  opacity: 1;
+                }
+              }
+              span.text {
+                bottom: 10px;
+                clear: both;
+                left: 0;
+                position: absolute;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .more {
+        @include transition(all 0.3s ease);
+        bottom: 0;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: 33px;
+        background-color: #f2f2f2;
+        color: #888;
+        font-weight: bold;
+        text-align: center;
+        padding: 0.5em;
+        z-index: 10;
+        &:hover {
+          cursor: pointer;
+          color: $berklee-red;
+        }
+        &.top {
+          bottom: 339px;
+        }
+      }
+    }
+  }
+}
+
+// mobile tweaks
+
+.icon-lynda {
+  background-image: url('#{$images}/icons/lynda-100x100-gray.png');
+  background-repeat: no-repeat;
+  background-size: 16px;
+  width: 16px;
+  display: inline-block;
+  height: 16px;
+}

@@ -1,0 +1,104 @@
+name = J. Jamerson
+description = Custom base theme for Berklee.
+core = 7.x
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Custom stylesheets:
+stylesheets[screen][] = stylesheets/jjamerson_screen.css
+stylesheets[screen][] = stylesheets/blocks/block-classes.css
+stylesheets[screen][] = stylesheets/blocks/block-content-blocks.css
+stylesheets[screen][] = stylesheets/blocks/block-follow-site.css
+stylesheets[screen][] = stylesheets/blocks/block-join-us.css
+stylesheets[screen][] = stylesheets/blocks/block-menu-menu-campus-tools.css
+stylesheets[screen][] = stylesheets/blocks/block-menu.css
+stylesheets[screen][] = stylesheets/blocks/block-search-form.css
+stylesheets[screen][] = stylesheets/blocks/block-social-bar.css
+stylesheets[screen][] = stylesheets/blocks/block-system-main-menu.css
+stylesheets[screen][] = stylesheets/blocks/block-user-login-logout.css
+stylesheets[screen][] = stylesheets/content-types/book.css
+stylesheets[screen][] = stylesheets/content-types/forms_downloads.css
+stylesheets[screen][] = stylesheets/content-types/page.css
+stylesheets[screen][] = stylesheets/content-types/user.css
+stylesheets[screen][] = stylesheets/content-types/webform.css
+stylesheets[screen][] = stylesheets/general/content-slideshow.css
+stylesheets[screen][] = stylesheets/general/forms.css
+stylesheets[screen][] = stylesheets/general/general.css
+stylesheets[screen][] = stylesheets/general/icons.css
+stylesheets[screen][] = stylesheets/general/overlay.css
+stylesheets[screen][] = stylesheets/general/sliders.css
+stylesheets[screen][] = stylesheets/general/tables.css
+stylesheets[screen][] = stylesheets/regions/content-regions.css
+stylesheets[screen][] = stylesheets/regions/emergency-bar.css
+stylesheets[screen][] = stylesheets/regions/footer.css
+stylesheets[screen][] = stylesheets/regions/header.css
+stylesheets[screen][] = stylesheets/regions/offscreen-regions.css
+stylesheets[screen][] = stylesheets/regions/sidebar-regions.css
+stylesheets[screen][] = stylesheets/regions/stripes.css
+stylesheets[screen][] = stylesheets/regions/top_navigation_bar.css
+
+stylesheets[print][] = stylesheets/jjamerson_print.css
+
+; Custom JS:
+; Moved to child theme (jjamerson_lb)
+;scripts[] = js/jjamerson.min.js
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Regions:
+
+regions[page_top]       = Page top
+; Page top is the very top of the body. A default Drupal region that is 
+; hidden from the UI. Items must be added via code. The admin toolbar appears 
+; in this region.
+
+regions[emergency_bar]  = Emergency bar
+; The emergency bar spans full width and is immediately below the 
+; page top.
+
+regions[header]         = Header
+; The top of the page container. 
+
+regions[top_nav]        = Fixed top navigation bar
+; 
+
+regions[off_screen_sidebar]     = Off-Screen Sidebar
+; The sidebar that hides off-canvas and slides in when its button is clicked.
+
+regions[off_screen_overlay]     = Off-Screen Overlay
+; The content area that overlays the page when the off-screen sidebar is activated.
+
+regions[help]           = Help & Messages
+; For system messages, webform erros, and whatlike. Below the header but above 
+; the breadcrumbs, social links, and page title. Spans page container.
+
+regions[content_top]    = Content top
+; Below the breadcrumbs, social links, and page title. Spans content region.
+
+regions[content]        = Content
+; Yeah.
+
+regions[content_bottom] = Content bottom
+; mmm hmm
+
+regions[stripes]  = Stripes 
+; Full-width strips of content that sit below the content and sidebar regions
+
+regions[sidebar_first]  = First sidebar (left or above)
+; Secondary menu (departments, sections, etc.) goes in here
+
+regions[sidebar_second] = Second sidebar (right or below)
+; Superfluous stuff goes here.
+
+regions[footer]         = Footer
+; Copyright &copy; 2013
+
+regions[page_bottom]    = Page bottom
+; Like page top, but more of a submissive personality type.
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Options to show up on the theme's settings page:
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = favicon

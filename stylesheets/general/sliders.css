@@ -1,0 +1,88 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+.berklee-slider {
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.berklee-slider h3 {
+  font-size: 13px;
+}
+.berklee-slider .berklee-slider-canvas {
+  height: 100%;
+  overflow: hidden;
+  width: 30000px;
+}
+.berklee-slider .berklee-slide {
+  float: left;
+  height: 100%;
+  margin-right: 20px;
+  position: relative;
+}
+.berklee-slider .berklee-slide h4 {
+  font-size: 13px;
+}
+.berklee-slider .berklee-slide h4 a {
+  color: white;
+}
+.berklee-slider .berklee-slider-navigation {
+  float: right;
+}
+.berklee-slider .berklee-slider-button {
+  background: #333;
+  border: 2px solid #fff;
+  color: #fff;
+  float: left;
+  font-size: 13px;
+  margin: 0;
+  padding: 1px 3px 0;
+  width: 16px;
+}
+.berklee-slider .berklee-slider-button:hover {
+  cursor: pointer;
+}
+.berklee-slider .berklee-slider-button.disabled {
+  color: #ccc;
+}
+
+.slider.full-width-overlay {
+  position: relative;
+  height: 400px;
+}
+.slider.full-width-overlay .views-row, .slider.full-width-overlay .slide {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.slider.full-width-overlay .views-row.active, .slider.full-width-overlay .slide.active {
+  opacity: 1;
+}
+
+.views_slideshow_slide, .views_slideshow_slide .views-row, .views_slideshow_slide p {
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.views_slideshow_slide img {
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.page-slideshow-portrait {
+  font-size: 13px;
+  color: #666;
+}
+.page-slideshow-portrait .teaser {
+  color: #4f4f4f;
+  line-height: 17px;
+}
+.page-slideshow-portrait .field-job-title {
+  font-size: 13px;
+  font-style: italic;
+}
+.page-slideshow-portrait .field-department-primary, .page-slideshow-portrait .field-department-primary a {
+  font-size: 13px;
+}

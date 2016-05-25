@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+html.js input.form-autocomplete {
+  background-position: 100% -66%;
+}
+
+html.js input.throbbing {
+  background-position: 100% 100%;
+}
+
+span.form-required {
+  color: #d81118;
+  white-space: pre;
+  margin: 0 6px 0 3px;
+}
+
+select, textarea,
+input[type="text"], input[type="password"], input[type="datetime"],
+input[type="datetime-local"], input[type="date"], input[type="month"],
+input[type="time"], input[type="week"], input[type="number"], input[type="email"],
+input[type="url"], input[type="search"], input[type="tel"], input[type="color"],
+input[type="text"], .uneditable-input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  color: #555555;
+  color: #888;
+  display: inline-block;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding: 0.45em;
+  padding: 4px 6px;
+  vertical-align: middle;
+}
+
+input[type="file"] {
+  display: inline-block;
+  padding: 1em 0 2em;
+  height: 20px;
+}
+
+input[type="submit"] {
+  font-size: 1em;
+}
+
+.form-type-checkboxes > label,
+.form-type-radios > label,
+.webform-component-radios > label {
+  margin-bottom: 1em;
+  clear: both;
+  display: block;
+}
+
+/* Slight form tweak http://www.berklee.edu/giving/more-than-a-job */
+#webform-client-form-2227251 h3 {
+  border-bottom: 1px solid #ededed;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  #webform-client-form-2227251 h3 {
+    margin: 0 0 10px 20px;
+  }
+}
+#webform-client-form-2227251 label {
+  display: inline-block;
+  width: 200px;
+}
+
+/* Overriding bootstrap stuff: */
+.form-actions {
+  background: transparent;
+  border-top: none;
+  margin: 0;
+  padding: 0;
+}
+.form-actions #edit-previous {
+  float: left;
+}
+.form-actions #edit-next {
+  float: right;
+}
+
+.form-wrapper {
+  margin-top: 6px;
+  padding-top: 6px;
+}
+.form-wrapper legend {
+  font-family: "open sans", ​ Arial, ​ Helvetica, ​ sans-serif;
+  font-size: 16px;
+}
+
+input.form-text {
+  width: 95%;
+}
+
+.form-type-checkbox {
+  overflow: hidden;
+  *zoom: 1;
+}
+.form-type-checkbox input[type="checkbox"], .form-type-checkbox label.option {
+  float: left;
+}
+.form-type-checkbox label.option {
+  color: #555;
+  margin-left: 6px;
+  margin-top: 2px;
+  max-width: 80%;
+  padding-left: 4px;
+}
+
+@media (max-width: 767px) {
+  #page-content .views-exposed-widget,
+  #page-content .views-widget,
+  #page-content .form-item,
+  #page-content .views-exposed-form .container-inline-date .date-padding,
+  #page-content .form-select,
+  #page-content input.form-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 7px;
+    min-height: 35px;
+    width: 100% !important;
+  }
+  #page-content .webform-component input[type="radio"] {
+    margin-right: 8px;
+  }
+  #page-content .webform-component.form-item > label {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  form {
+    padding: 20px;
+  }
+}
+
+select {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  line-height: 30px;
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
+  min-height: 25px;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.grippie {
+  margin-bottom: 10px;
+}
+
+.form-item, .pseudo-form-item {
+  margin-bottom: 10px;
+}
+.form-item .description, .pseudo-form-item .description {
+  color: #666;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .form-item .description, .pseudo-form-item .description {
+    padding-bottom: 0;
+  }
+}
+.form-item .form-type-radio, .pseudo-form-item .form-type-radio {
+  float: left;
+  margin: 0 !important;
+  min-height: 35px;
+  padding: 0 !important;
+  width: 49%;
+}
+.form-item .form-type-radio:first-child, .pseudo-form-item .form-type-radio:first-child {
+  clear: both;
+}
+.form-item .form-type-radio label, .pseudo-form-item .form-type-radio label {
+  display: inline;
+}
+
+input[type="checkbox"]:not(.vbo-select) {
+  opacity: 0;
+  margin-top: 5px !important;
+}
+input[type="checkbox"]:not(.vbo-select) + label {
+  position: relative;
+}
+input[type="checkbox"]:not(.vbo-select) + label:before {
+  color: #999;
+  content: "\f096";
+  font-family: FontAwesome;
+  left: -17px;
+  line-height: 0;
+  position: absolute;
+  top: 10px;
+  vertical-align: baseline;
+  z-index: -1;
+}
+input[type="checkbox"]:not(.vbo-select):checked + label:before {
+  color: #d81118;
+  content: "\f14a";
+}
+
+.region-content table.webform-grid {
+  table-layout: auto;
+}

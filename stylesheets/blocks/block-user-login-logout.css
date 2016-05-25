@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+.region-header .top-bar-block {
+  position: relative;
+}
+.region-header .top-bar-block .content a, .region-header .top-bar-block .content span {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #eee;
+  display: block;
+  float: right;
+  font-size: 12px;
+  line-height: 1.4em;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .region-header .top-bar-block .content a, .region-header .top-bar-block .content span {
+    font-size: 10px;
+  }
+}
+
+h3.login {
+  font-size: 1.1em;
+  font-family: "open sans", ​ Arial, ​ Helvetica, ​ sans-serif;
+  font-weight: normal;
+  height: 35px;
+  line-height: 28px;
+  margin-right: 1em;
+}
+h3.login:hover {
+  cursor: pointer;
+}
+
+.user-login-logout {
+  position: relative;
+}
+
+#login-options {
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+@media (min-width: 768px) {
+  #login-options {
+    background: #f2f2f2;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid #dedede;
+    left: -10px;
+    position: absolute;
+    top: 35px;
+    width: 200px;
+  }
+}
+#login-options:not(.visible) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* Not focusable by default, so that keyboard junkies don't focus on
+     invisible elements. But on the off chance that the element should be
+     focusable: */
+  opacity: 0;
+}
+#login-options a {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.2em 0.5em;
+  width: 100%;
+  color: #666;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: normal;
+  margin: 0.5em 0;
+}
+#login-options a:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+#login-options a:hover, #login-options a.highlight {
+  color: #d81118;
+}
+#login-options a .description {
+  display: block;
+  line-height: normal;
+  font-size: 11px;
+  font-weight: normal;
+  color: #999;
+  margin: -0.3em 0 0.66em;
+}
+#login-options:after {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #f2f2f2;
+  border: 2px solid #dedede;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  content: '';
+  height: 15px;
+  left: 20px;
+  position: absolute;
+  top: -10px;
+  width: 15px;
+}
+
+.logged-in .user-login-logout .login {
+  display: none;
+}
+
+.not-logged-in .user-login-logout .logout {
+  display: none;
+}

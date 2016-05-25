@@ -1,0 +1,278 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+.region-top-nav .block-menu.campus-tools {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .region-top-nav .block-menu.campus-tools {
+    float: right;
+  }
+}
+.region-top-nav .block-menu.campus-tools h3 {
+  border-right: 1px solid #444;
+  color: transparent;
+  font-weight: normal;
+  height: 30px;
+  line-height: 1.5em;
+  margin-right: 0.5em;
+  overflow: hidden;
+  padding-left: 10px;
+  text-align: center;
+  width: 28px;
+}
+.region-top-nav .block-menu.campus-tools h3:before {
+  content: "\f00a";
+  font-family: fontAwesome;
+  font-size: 16px;
+  color: white;
+}
+.region-top-nav .block-menu.campus-tools h3:hover {
+  cursor: pointer;
+}
+.region-top-nav .block-menu.campus-tools .contextual-links-wrapper {
+  left: -30px;
+  width: 30px;
+}
+.region-top-nav .block-menu.campus-tools .content {
+  position: absolute;
+}
+.region-top-nav .block-menu.campus-tools .content .tip {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  background: #f2f2f2;
+  border: 2px solid #dedede;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  height: 15px;
+  left: 11px;
+  position: absolute;
+  top: -2px;
+  width: 15px;
+}
+.region-top-nav .block-menu.campus-tools .content .tip:not(.visible) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* Not focusable by default, so that keyboard junkies don't focus on
+     invisible elements. But on the off chance that the element should be
+     focusable: */
+  opacity: 0;
+}
+.region-top-nav .block-menu.campus-tools .content nav {
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  padding: 0.2em;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .region-top-nav .block-menu.campus-tools .content nav {
+    margin-top: 35px;
+    width: 314px;
+    max-height: 443px;
+    height: auto;
+    overflow: hidden;
+    background: #f2f2f2;
+    border: 2px solid #dedede;
+    border-radius: 2px;
+    left: -142px;
+    top: -30px;
+    opacity: 1;
+    position: absolute;
+  }
+}
+.region-top-nav .block-menu.campus-tools .content nav:not(.visible) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* Not focusable by default, so that keyboard junkies don't focus on
+     invisible elements. But on the off chance that the element should be
+     focusable: */
+  opacity: 0;
+}
+.region-top-nav .block-menu.campus-tools .content nav ul li:nth-child(2) ul li {
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.region-top-nav .block-menu.campus-tools .content nav ul li:nth-child(2) ul li:not(.visible) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* Not focusable by default, so that keyboard junkies don't focus on
+     invisible elements. But on the off chance that the element should be
+     focusable: */
+  opacity: 0;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu .nolink {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  font-weight: 100;
+  font-size: 11px;
+  margin-bottom: 0.66em;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu.first > ul li {
+  height: 34px;
+  border-top: 2px solid #ccc;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu.first > ul li:hover {
+  border-top-color: #d81118;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu.first > ul li a {
+  font-weight: 100;
+  height: auto;
+  position: relative;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 11px;
+  letter-spacing: 0.1px;
+  color: #222;
+  text-align: center;
+  top: 50%;
+  margin-left: -1px;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li {
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: block;
+  width: 93px;
+  float: left;
+  margin: 4px;
+  height: 93px;
+  background: white;
+  position: relative;
+  z-index: 5;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  font-size: 12px;
+  color: #888;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a i {
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+  font-size: 35px;
+  font-style: normal;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  top: 0.5em;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a i.icon-lynda, .region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a i.icon-lynda:after {
+  background-image: url("/sites/all/themes/jjamerson/images/icons/lynda-100x100-gray.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  display: block;
+  height: 40px;
+  margin: -5px auto;
+  opacity: 0.85;
+  padding: 0 1px;
+  position: relative;
+  width: 40px;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a i.icon-lynda:after {
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-image: url("/sites/all/themes/jjamerson/images/icons/lynda-100x100-red.png");
+  opacity: 0;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a .image-icon {
+  max-width: 38px;
+  max-height: 35px;
+  height: auto;
+  margin: 1.25em auto;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a:hover .icon-lynda:after {
+  opacity: 1;
+}
+.region-top-nav .block-menu.campus-tools .content nav li.has-submenu > ul li a span.text {
+  bottom: 10px;
+  clear: both;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.region-top-nav .block-menu.campus-tools .content nav .more {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  bottom: 0;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 33px;
+  background-color: #f2f2f2;
+  color: #888;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+  z-index: 10;
+}
+.region-top-nav .block-menu.campus-tools .content nav .more:hover {
+  cursor: pointer;
+  color: #d81118;
+}
+.region-top-nav .block-menu.campus-tools .content nav .more.top {
+  bottom: 339px;
+}
+
+.icon-lynda {
+  background-image: url("/sites/all/themes/jjamerson/images/icons/lynda-100x100-gray.png");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  width: 16px;
+  display: inline-block;
+  height: 16px;
+}

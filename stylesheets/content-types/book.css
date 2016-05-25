@@ -1,0 +1,108 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+#book-helper-admin-edit table#book-outline {
+  table-layout: auto;
+}
+#book-helper-admin-edit table#book-outline th {
+  text-align: center;
+}
+#book-helper-admin-edit table#book-outline th.checkbox {
+  padding-left: 0;
+}
+#book-helper-admin-edit table#book-outline td input[type="checkbox"] {
+  margin-bottom: 0;
+  margin-left: 0;
+  opacity: 1;
+}
+
+.book-navigation ul {
+  margin-bottom: 5px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dotted #ccc;
+  /* not sure I need this:
+  &:before {
+    content: 'Outline';
+    display: block;
+    font-family: $body; font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: -3px;
+  }
+  */
+}
+.book-navigation ul a {
+  display: block;
+  padding-bottom: 6px;
+  line-height: 10px;
+  border-bottom: 1px dotted #eee;
+}
+.book-navigation ul li:last-child a {
+  border-bottom: none;
+}
+.book-navigation li {
+  font-size: 13px;
+}
+.book-navigation li:not(:first-child) {
+  margin-top: 5px;
+}
+.book-navigation li:first-child {
+  margin-top: 0;
+}
+.book-navigation li:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.block-dynamic-book-block > .content > ul.menu > li {
+  padding-left: 0;
+}
+
+.page-links {
+  margin-top: 12px;
+}
+.page-links a {
+  font-size: 13px;
+  font-style: italic;
+}
+
+a.page-previous {
+  float: left;
+}
+a.page-previous:after {
+  padding-left: 6px;
+}
+
+a.page-next {
+  float: right;
+}
+a.page-next:before {
+  padding-right: 6px;
+}
+
+ul.links:not(.inline) li {
+  display: block;
+}
+
+ul.links.inline {
+  border: 1px dotted #f1f1f1;
+  border-left: none;
+  border-right: none;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+ul.links.inline li {
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 0;
+  padding-right: 1em;
+}
+ul.links.inline li:not(.first) {
+  padding-left: 0.7em;
+}
+ul.links.inline li:not(.last) {
+  border-right: 1px solid #aaa;
+}

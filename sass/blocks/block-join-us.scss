@@ -1,0 +1,59 @@
+@import "../jjamerson_variables";
+
+.block-join-us {
+  @include box-sizing(border-box);
+  float: right;
+  width: 60%;
+  height: 122px;
+  background: #ccc;
+  @include box-shadow(inset 0 0 20px #555);
+  margin-bottom: 2em; 
+  margin-top: 2em;
+  @media #{$s} {
+    margin-bottom: 20px;
+  }
+  padding: 10px 15px;
+  label {
+    color: #333;
+    float: left;
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  .email-form {
+  }
+  input.email {
+    border: none;
+    @include box-sizing(border-box);
+    @include border-radius(7px);
+    font-size: 13px;
+    height: 23px;
+    padding: 0 5px;
+    width: 100%;
+    color: #333;
+  }
+  input.form-submit {
+    @include border-radius(7px);
+    @include text-shadow(1px 1px 1px rgba(255, 255, 255, 0.37) );
+    background: #666;
+    border: 0;
+    color: white;
+    display: block;
+    float: none;
+    font-size: 13px;
+    height: 24px;
+    line-height: 11px;
+    margin: auto;
+    margin-top: -13px;
+    padding: 0 10px;
+    width: 100px;
+    &:hover {
+      @include box-shadow(none);
+      background: #aaa;
+      color: #555;
+    }
+  }
+}

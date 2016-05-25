@@ -1,0 +1,231 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+#page .sm,
+#page .social-bar {
+  overflow: hidden;
+  *zoom: 1;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 340px;
+}
+#page .sm p,
+#page .social-bar p {
+  font-size: 14px;
+  line-height: 1.3em;
+}
+#page .sm .nav,
+#page .social-bar .nav {
+  padding-top: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  width: 1200px;
+  margin-bottom: 0;
+}
+#page .sm .smarea,
+#page .social-bar .smarea {
+  padding-top: 15px;
+  position: absolute;
+  width: 100%;
+  -moz-transform: translate3d(-5000px, 0px, 0px);
+  -ms-transform: translate3d(-5000px, 0px, 0px);
+  -webkit-transform: translate3d(-5000px, 0px, 0px);
+  transform: translate3d(-5000px, 0px, 0px);
+}
+#page .sm .smarea.active,
+#page .social-bar .smarea.active {
+  -moz-transition: -moz-transform 0.8s ease-in-out, opacity ease-in-out;
+  -o-transition: -o-transform 0.8s ease-in-out, opacity ease-in-out;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out, opacity ease-in-out;
+  transition: transform 0.8s ease-in-out, opacity ease-in-out;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+#page .sm .smtab,
+#page .social-bar .smtab {
+  padding: 5px 10px;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+  color: #7a7a7a;
+  text-transform: lowercase;
+}
+#page .sm .smtab:before,
+#page .social-bar .smtab:before {
+  width: 17px;
+  margin-right: 4px;
+  font-size: 17px;
+}
+#page .sm .smtab.fbtab:before,
+#page .social-bar .smtab.fbtab:before {
+  color: #a0a0a0;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f082";
+}
+#page .sm .smtab.twtab:before,
+#page .social-bar .smtab.twtab:before {
+  color: #a0a0a0;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f099";
+}
+#page .sm .smtab.intab:before,
+#page .social-bar .smtab.intab:before {
+  color: #a0a0a0;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f16d";
+}
+#page .sm .smtab.active,
+#page .social-bar .smtab.active {
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 3px 3px 0 0;
+  border-bottom: none;
+  background: #fafafa;
+  margin-left: -1px;
+}
+#page .sm .smtab:hover,
+#page .social-bar .smtab:hover {
+  cursor: pointer;
+}
+#page .sm .smitem,
+#page .social-bar .smitem {
+  float: left;
+  height: 260px;
+  overflow: hidden;
+  margin-right: 1%;
+  position: relative;
+  width: 24%;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #page .sm .smitem,
+  #page .social-bar .smitem {
+    height: 175px;
+  }
+}
+#page .sm .smitem a,
+#page .social-bar .smitem a {
+  color: #d81118;
+}
+#page .sm .fb-likes, #page .sm .fb-comments,
+#page .social-bar .fb-likes,
+#page .social-bar .fb-comments {
+  color: #aaa;
+  font-size: 11px;
+  float: right;
+}
+#page .sm .fb-likes:before, #page .sm .fb-comments:before,
+#page .social-bar .fb-likes:before,
+#page .social-bar .fb-comments:before {
+  color: #bbb;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f087";
+  margin-right: 4px;
+}
+#page .sm .fb-comments,
+#page .social-bar .fb-comments {
+  margin-right: 13px;
+}
+#page .sm .fb-comments:before,
+#page .social-bar .fb-comments:before {
+  color: #bbb;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f0e5";
+  margin-right: 3px;
+}
+#page .sm .post-content,
+#page .social-bar .post-content {
+  margin-bottom: 5px;
+  height: 185px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #page .sm .post-content,
+  #page .social-bar .post-content {
+    font-size: 12px;
+    height: 120px;
+  }
+}
+#page .sm .post-content a,
+#page .social-bar .post-content a {
+  display: block;
+}
+#page .sm .timeago,
+#page .social-bar .timeago {
+  font-weight: 100;
+  font-size: 13px;
+  color: #777;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 5px;
+}
+#page .sm p.message,
+#page .social-bar p.message {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 13px;
+  height: 185px;
+  margin: 4px 5px 0 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 7px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#page .sm .smitem:hover p.message,
+#page .social-bar .smitem:hover p.message {
+  opacity: 1;
+}
+#page .sm .tw.smarea .smitem,
+#page .social-bar .tw.smarea .smitem {
+  padding: 10px;
+  height: 160px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+  background: url(/sites/all/themes/jjamerson/images/backgrounds/stripes-fafafa-fff-5-2.png) repeat;
+}
+#page .sm .tw.smarea .smitem p,
+#page .social-bar .tw.smarea .smitem p {
+  line-height: 1.5em;
+}
+#page .sm a.visit-us,
+#page .social-bar a.visit-us {
+  opacity: 0.7;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+#page .sm figure,
+#page .social-bar figure {
+  -moz-box-shadow: 1px 1px 5px #e1e1e1;
+  -webkit-box-shadow: 1px 1px 5px #e1e1e1;
+  box-shadow: 1px 1px 5px #e1e1e1;
+  background: white;
+  border: 4px solid white;
+  clear: both;
+  display: block;
+  height: auto;
+  margin-top: 15px;
+  margin: 0;
+  max-height: 180px;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+#page .sm figure img,
+#page .social-bar figure img {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}

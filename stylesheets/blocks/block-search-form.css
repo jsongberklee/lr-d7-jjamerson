@@ -1,0 +1,200 @@
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+#block-search-form {
+  float: right;
+  width: 30%;
+  position: relative;
+  /* The search bar */
+}
+#block-search-form .google-cse, #block-search-form #search-block-form {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: auto;
+  float: right;
+  margin-left: 7px;
+  width: 100%;
+}
+#block-search-form .google-cse .form-actions, #block-search-form #search-block-form .form-actions {
+  background: none;
+}
+#block-search-form .google-cse:after, #block-search-form #search-block-form:after {
+  color: #999;
+  font-family: FontAwesome;
+  opacity: 1;
+  content: "\f002";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 0.2em;
+  width: 10px;
+  z-index: 2;
+}
+#block-search-form .google-cse input[name="search_block_form"], #block-search-form #search-block-form input[name="search_block_form"] {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-image: none !important;
+  color: #ddd;
+  float: left;
+  font-style: italic;
+  height: 14px;
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  border: none;
+  padding: 0.4em 0em 0.4em 1em;
+  margin-top: 0;
+}
+#block-search-form .google-cse input[name="search_block_form"]:focus, #block-search-form .google-cse input[name="search_block_form"]:active, #block-search-form #search-block-form input[name="search_block_form"]:focus, #block-search-form #search-block-form input[name="search_block_form"]:active {
+  color: #777;
+  font-style: normal;
+  opacity: 1;
+}
+#block-search-form .google-cse input.form-submit, #block-search-form #search-block-form input.form-submit {
+  display: none;
+}
+#block-search-form .results {
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid #eee;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  padding: 1em;
+  width: 100%;
+  z-index: 1000;
+  height: 0 !important;
+  opacity: 0;
+}
+#block-search-form .results.populated {
+  opacity: 1;
+  height: auto !important;
+}
+#block-search-form .results a {
+  clear: both;
+  color: #d81118;
+  display: block;
+  float: none;
+  font-size: 1em;
+  line-height: 1.4em;
+  overflow: hidden;
+  padding: 0.2em 0;
+}
+#block-search-form .results a:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+#block-search-form .results a:hover {
+  text-decoration: underline;
+}
+
+.menu-filter {
+  padding: 1em;
+  border: 1px solid #222;
+  position: fixed;
+  left: 8.75%;
+  top: 25%;
+  width: 52.5%;
+  margin-left: 30%;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2em;
+  border-radius: 10px;
+}
+.menu-filter h3 {
+  color: white;
+  margin-bottom: 0.4em;
+  font-size: 2em;
+  font-weight: 100;
+}
+.menu-filter input[type="text"] {
+  -moz-box-shadow: inset 0 0 5px black;
+  -webkit-box-shadow: inset 0 0 5px black;
+  box-shadow: inset 0 0 5px black;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #666;
+  border: none;
+  float: left;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 0.2em;
+  padding: 0.3em;
+  height: 47px;
+  width: 90%;
+}
+.menu-filter input[type="text"].default-text {
+  color: #d81118;
+}
+.menu-filter .menu-filter-submit {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.8em;
+  width: 9%;
+  text-align: center;
+}
+.menu-filter .menu-filter-submit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menu-filter .results {
+  clear: both;
+  margin-top: 0.5em;
+  overflow: hidden;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menu-filter .results a {
+  display: block;
+  color: white;
+  font-size: 1em;
+  font-style: italic;
+  padding: 0.2em 0;
+}
+.menu-filter .results a:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.menu-filter .menu-filter-help {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 1;
+  max-height: 200px;
+  color: #ccc;
+  font-size: 1em;
+  line-height: normal;
+  padding: 0 0.5em;
+}
+.menu-filter.results .menu-filter-help {
+  opacity: 0;
+  max-height: 0px;
+}

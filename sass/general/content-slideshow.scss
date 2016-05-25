@@ -1,0 +1,127 @@
+@import "../jjamerson_variables";
+
+.region-content .content-slideshow {
+  clear: both;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  img {
+    background: #aaa;
+  }
+  .slideshow-images {
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 1em;
+    width: 1000%;
+    figure {
+      @include box-sizing(border-box);
+      float: left;
+      margin: 0;
+      padding: 0 2px 0 0;
+      width: 10%;
+      img {
+        min-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+  figcaption {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #5a5a5a;
+  }
+  .credit {
+    margin-top: 0.66em;
+    font-size: 11px;
+    color: #888;
+  }
+  .slideshow-thumbs {
+    clear: both;
+    height: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 1000%;
+    @media #{$s} {
+      display: none;
+    }
+    img {
+      @include transition(0.4s ease all);
+      border-bottom: 3px solid transparent;
+      float: left;
+      height: 47px;
+      margin: 0 0.1% 0 0;
+      max-width: 100%;
+      opacity: 0.7;
+      padding: 0;
+      transition: all 0.15s ease;
+      width: auto;
+      &:hover {
+        border-bottom: 3px solid #ccc;
+        cursor: pointer;
+      }
+    }
+
+  }
+  @for $i from 0 through 20 {
+    &[data-active-slide="#{$i}"] {
+      .slideshow-images {
+        @include transform(translate3d(-10% * $i, 0, 0) );
+      }
+      .slideshow-thumbs img[data-number="#{$i}"] {
+        border-bottom: 3px solid $berklee-red;
+      }
+    }
+  }
+  .slideshow-chrome {
+    width: 100%;
+    .slideshow-left, .slideshow-right {
+      color: white;
+      font-size: 60px;
+      height: 70%;
+      margin: 0;
+
+      opacity: 0.5;
+      position: absolute;
+      text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+      top: 52%;
+      @include translateY(-50%);
+      width: 45px;
+      z-index: 3;
+      &:before {
+        position: absolute;
+        top: 30%;
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+    .slideshow-left {
+      left: 7px;
+      &:before {
+        left: 0;
+      }
+    }
+    .slideshow-right {
+      right: 7px;
+      &:before {
+        right: 0;
+      }
+    }
+  }
+}
+
+.content-slideshow.mini {
+  @media #{$not-small} {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 40%;
+  }
+}
+
+figure.media-element-wrapper.slideshow {
+  display: none;
+}

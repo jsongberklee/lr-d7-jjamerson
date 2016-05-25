@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* This is a class in h5bp that hides elements but keeps them 
+   accessible to screen readers, packaged as a mixin: */
+.webform-component {
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 1px dotted #ccc;
+  clear: both;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.webform-component.webform-component-markup {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.webform-component.webform-component-markup strong {
+  font-size: 18px;
+}
+.webform-component input, .webform-component select {
+  margin-top: 10px;
+}
+.webform-component input[type="radio"] {
+  margin-left: 2px;
+  margin-top: -3px;
+}
+.webform-component label.option {
+  font-family: "open sans", ​ Arial, ​ Helvetica, ​ sans-serif;
+}
+.webform-component .webform-datepicker select {
+  width: 25%;
+}
+.webform-component.webform-component-checkboxes > label {
+  clear: both;
+  display: block;
+  margin-bottom: 16px;
+}
+.webform-component.webform-component-checkboxes .form-type-checkbox {
+  display: block;
+  float: left;
+  margin-left: 16px;
+  width: 100%;
+}
+.webform-component.webform-component-radios > label {
+  float: left;
+}
+.webform-component.webform-component-radios .form-type-radio {
+  float: left;
+  margin-right: 16px;
+}
+.webform-component .description {
+  clear: both;
+  margin-top: 5px;
+}
+
+div.select-or-other div.form-type-radios + div.form-type-textfield {
+  clear: left;
+  float: left;
+}
+
+input.form-text.error {
+  border-color: rgba(200, 50, 50, 0.75);
+  border-width: 2px;
+}
